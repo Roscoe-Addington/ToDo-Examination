@@ -4,9 +4,11 @@ function TodoForm({ onAdd }) {
   const [text, setText] = useState("");
 
   function handleSubmit(event) {
-    event.preventDefault(); // stoppar att sidan laddas om
-    onAdd(text);
-    setText(""); // tömmer inputfältet efter att en todo har lagts till
+    event.preventDefault();
+    const trimmedText = text.trim(); // tar bort mellanslag i början och slutet
+    if (trimmedText === "") return; // stoppa tomma uppgifter
+    onAdd(trimmedText);
+    setText("");
   }
 
   return (
