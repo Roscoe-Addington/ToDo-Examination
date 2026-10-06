@@ -10,7 +10,6 @@ function TodoForm({ onAdd }) {
     onAdd(trimmedText);
     setText("");
   }
-
   return (
     <form onSubmit={handleSubmit} className="todo-form">
       <input
@@ -23,5 +22,17 @@ function TodoForm({ onAdd }) {
     </form>
   );
 }
+function TodoItem({ todo, onToggle }) {
+  return (
+    <li className={todo.done ? "todo-item done" : "todo-item"}>
+      <input
+        type="checkbox"
+        checked={todo.done}
+        onChange={() => onToggle(todo.id)}
+      />
+      <span className="todo-text">{todo.text}</span>
+    </li>
+  );
+}
 
-export default TodoForm;
+export default TodoItem;
