@@ -1,2 +1,5 @@
-Svar fråga 1:
+Svar fråga 1: (State)
 Appen gör det på följande sätt: todos innehåller listan med uppgifter, och setTodos ändrar dem. Listan skapas med useState och är i början tom. Varje uppgift eller punkt på listan har en done som börjar som false. Blir done true stryks texten över. Det är setTodos som gör ändringen. När datan ändras ritar React om sidan direkt, utan att behöva ladda om.
+
+Svar på fråga 2: Immutability (Oförändlighet)
+Är detta bra?: React kollar om det är samma array som förut, alltså jämför den nya och den gamla. .push() ändrar den gamla arrayen så React märker inget och sidan ritas inte om. Med andra ord händer det inget på skärmen. Vill man lägga till uppgifter får man skapa en ny array [...todos, newTodo]. När man tar bort uppgifter används filter som behåller de uppgifter som ska vara kvar och lägger dem i en ny array.
