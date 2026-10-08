@@ -22,3 +22,7 @@ Min kodversion skapar en ny array jämfört med .push() som inte gör det. newTo
 Problemlösning & Reflektion
 
 Enligt min upplevelse blev webbläsaren (skärmen) helt vit. Jag hittade ett felmeddelande i VS Code:s Problems-panel. Jag förstod inte meddelandet, så jag bad AI förklara felet. Det visade sig att namnet på en mapp (components) var stavat med stor bokstav ("C") i stället för liten bokstav ("c"). Jag döpte om mappen till components med ett litet "c" och jag lärde mig att stora och små bokstäver i filnamn spelar roll och att vara extra noga med det.
+
+Länk till video (Hoppas den funkar :-) )
+
+https://funet.sharepoint.com/:v:/s/MjukvaruutvecklareYhdistans-MU26/IQCK0G35k2CHQrXExTGSuohRAWRIdOT3KLIax0Un0MxK0VA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=d5C9TU

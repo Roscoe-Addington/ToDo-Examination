@@ -9,8 +9,7 @@ function App() {
 
   function addTodo(text) {
     const newTodo = { id: crypto.randomUUID(), text: text, done: false };
-
-    setTodos([...todos, newTodo]);
+    setTodos([...todos, newTodo]);   
   }
 
   function toggleTodo(id) {

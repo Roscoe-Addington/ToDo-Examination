@@ -36,4 +36,3 @@ function TodoItem({ todo, onToggle }) {
 }
 
 export default TodoItem;
-x;
