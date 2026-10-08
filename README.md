@@ -18,3 +18,7 @@ function addTodo(text) {
 ```
 
 Min kodversion skapar en ny array jämfört med .push() som inte gör det. newTodo innehåller den nya uppgiften och även id, text och done.
+
+Problemlösning & Reflektion
+
+Enligt min upplevelse blev webbläsaren (skärmen) helt vit. Jag hittade ett felmeddelande i VS Code:s Problems-panel. Jag förstod inte meddelandet, så jag bad AI förklara felet. Det visade sig att namnet på en mapp (components) var stavat med stor bokstav ("C") i stället för liten bokstav ("c"). Jag döpte om mappen till components med ett litet "c" och jag lärde mig att stora och små bokstäver i filnamn spelar roll och att vara extra noga med det.
