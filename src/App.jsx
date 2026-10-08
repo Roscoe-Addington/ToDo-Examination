@@ -1,5 +1,6 @@
+export default TodoItem;
 import { useState } from "react";
-import TodoForm from "./components/TodoForm";
+import TodoForm from "./Components/TodoForm";
 import TodoItem from "./components/TodoItem";
 import "./App.css";
 
@@ -8,6 +9,7 @@ function App() {
 
   function addTodo(text) {
     const newTodo = { id: crypto.randomUUID(), text: text, done: false };
+
     setTodos([...todos, newTodo]);
   }
 
@@ -26,6 +28,7 @@ function App() {
   return (
     <main className="app">
       <h1>Att göra</h1>
+
       <TodoForm onAdd={addTodo} />
 
       <ul className="todo-list">
@@ -41,5 +44,3 @@ function App() {
     </main>
   );
 }
-
-export default App;
