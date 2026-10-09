@@ -1,6 +1,5 @@
-export default TodoItem;
 import { useState } from "react";
-import TodoForm from "./Components/TodoForm";
+import TodoForm from "./components/TodoForm";
 import TodoItem from "./components/TodoItem";
 import "./App.css";
 
@@ -9,7 +8,7 @@ function App() {
 
   function addTodo(text) {
     const newTodo = { id: crypto.randomUUID(), text: text, done: false };
-    setTodos([...todos, newTodo]);   
+    setTodos([...todos, newTodo]);
   }
 
   function toggleTodo(id) {
@@ -43,3 +42,4 @@ function App() {
     </main>
   );
 }
+export default App;
